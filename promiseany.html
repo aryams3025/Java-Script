@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const promise1 = new Promise((resolve,reject) =>{
+    resolve("Success");
+});
+
+const promise2 = new Promise((resolve,reject)=>{
+    reject("Fail");
+});
+const promise3 = new Promise((resolve,reject)=>{
+    resolve("Success 3");
+});
+const allpromises= Promise.any([promise1,promise2,promise3]);
+allpromises.then((response)=>{
+    console.log(response);
+})
+.catch((error)=>{
+    console.log(error);
+})
+    </script>
+</body>
+</html>
