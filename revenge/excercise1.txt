@@ -1,0 +1,22 @@
+how are you?
+
+// let sum = a.reduce((acc, curr) => {
+//     if (typeof curr === 'object' ) {
+//         acc += curr.f1;
+//         //acc.count++;
+//     }
+//     return acc;
+// }, 0);
+// console.log(sum);
+// // Calculate the average
+// // let average = count > 0 ? sum / count : 0;
+
+// // console.log("Average of f1:", average);
+// let count = 0
+// let objects = a.filter(t => typeof t === "object" ).reduce((acc,curr)=>{
+//     console.log(curr.f1);
+//    return acc += curr.f1;
+// },0)
+// console.log(objects);
+
+// // console.log(objects);
